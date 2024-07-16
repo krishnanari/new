@@ -3,26 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Portfolio</title>
+    <title>Ari Krishnan - Data Science Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f9f9f9;
         }
 
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 20px;
+            font-size: 1.2em;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
         }
 
         section {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
@@ -30,41 +58,23 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            font-size: 24px;
+        section h2 {
+            font-size: 2em;
             margin-bottom: 10px;
         }
 
-        h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        .bio-data {
+        section p {
+            font-size: 1em;
             line-height: 1.6;
+            margin-bottom: 20px;
         }
 
-        .bio-data-item {
+        .bio-data div {
             margin-bottom: 10px;
         }
 
         .project {
-            margin-bottom: 20px;
-        }
-
-        .subtitle {
-            font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 40px;
         }
 
         .project img {
@@ -76,190 +86,104 @@
 
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             background-color: #333;
             color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Portfolio</h1>
+        <h1>Ari Krishnan</h1>
+        <p>Data Scientist | Python Enthusiast | Data Visualization Expert</p>
+        <nav>
+            <a href="#objective">Objective</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <section>
-	<h2>Objective</h2>
-        <p>Enthusiastic Data Science graduate with hands-on experience in data preprocessing, exploratory data analysis, and visualization. Eager to apply 	my analytical skills and knowledge of statistical modeling to solve real-world problems and support business objectives.
-	</p>
+    <section id="objective">
+        <h2>Objective</h2>
+        <p>Enthusiastic Data Science graduate with hands-on experience in data preprocessing, exploratory data analysis, and visualization. Eager to apply my analytical skills and knowledge of statistical modeling to solve real-world problems and support business objectives.</p>
+    </section>
+
+    <section id="about">
         <h2>About Me</h2>
         <div class="bio-data">
-            <div class="bio-data-item"><strong>Name:</strong>Ari Krishnan</div>
-            <div class="bio-data-item"><strong>Degree:</strong> B.Tech-Information Technology</div>
-            <div class="bio-data-item"><strong>Skills:</strong>
-                <div>Python</div>
-                <div>Data Preprocessing</div>
-                <div>EDA</div>
-                <div>Pandas</div>
-                <div>Streamlit</div>
-                <div>Visualization</div>
-                <div>PowerBi</div>
-            </div>
-	    <div class="bio-data-item"><strong>Location:</strong>Tuticorin</div>
-	    <div class="bio-data-item"><strong>Languages Known:</strong>
-		<div>English</div>
-		<div>Tamil</div>
-            </div>
-	    <h2>Contact</h2>
-	    <p>Email:arikrishnan23121999@gmail.com.com</p>
-    	    <p>LinkedIn: <a href="https://www.linkedin.com/in/ari-krishnan-9735ab208/">Ari krishnan</a></p>
-	
+            <div><strong>Name:</strong> Ari Krishnan</div>
+            <div><strong>Degree:</strong> B.Tech - Information Technology</div>
+            <div><strong>Skills:</strong> Python, Data Preprocessing, EDA, Pandas, Streamlit, Visualization, PowerBi</div>
+            <div><strong>Location:</strong> Tuticorin</div>
+            <div><strong>Languages Known:</strong> English, Tamil</div>
+        </div>
     </section>
 
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <h3>Project 1: YouTube Data Harvesting and Warehousing</h3>
+            <p>This project aims to develop a user-friendly Streamlit application that leverages the power of the Google API to extract valuable information from YouTube channels. The SQL database is used to create tables and make them accessible for analysis and exploration within the Streamlit app.</p>
+            <img src="Screenshot 2024-06-25 161505.png" alt="YouTube Data Harvesting and Warehousing">
+            <img src="Screenshot 2024-06-25 162914.png" alt="YouTube Data Harvesting and Warehousing">
+            <img src="Screenshot 2024-06-25 163233.png" alt="YouTube Data Harvesting and Warehousing">
+            <p><strong>Key Technologies and Skills:</strong> Python, Streamlit, Pandas, YouTube API, MySQL</p>
+            <p><a href="https://github.com/krishnanari/youtube" target="_blank">GitHub Repository</a></p>
+        </div>
 
+        <div class="project">
+            <h3>Project 2: PhonePe Data Visualization and Exploration</h3>
+            <p>This Streamlit web application is designed for visualizing and exploring PhonePe data, including aggregated transaction data, aggregated user data, map transaction data, map user data, top transaction data, and top user data.</p>
+            <img src="Screenshot 2024-06-26 092843.png" alt="PhonePe Data Visualization">
+            <img src="Screenshot 2024-06-26 092854.png" alt="PhonePe Data Visualization">
+            <img src="Screenshot 2024-06-26 092908.png" alt="PhonePe Data Visualization">
+            <p><strong>Key Technologies and Skills:</strong> Python, Streamlit, Pandas, MySQL</p>
+            <p><a href="https://github.com/krishnanari/phonepe" target="_blank">GitHub Repository</a></p>
+        </div>
 
-    <section class="project">
-        <h2>Project 1: YouTube Data Harvesting and Warehousing</h2>
-        <p class="subtitle">Overview:</p>
-        <p>It is a project aimed at developing a user-friendly Streamlit application that leverages the power of the Google API to extract valuable
-	information from YouTube channels. The SQL database will be used to create tables and make them accessible for analysis and exploration within 	the 	Streamlit app.</p>
-        <p class="subtitle">Webpage Overview:</p>
-        <img src="Screenshot 2024-06-25 161505.png" alt="Project 1 Screenshot">
-        <img src="Screenshot 2024-06-25 162914.png" alt="Project 1 Screenshot">
-        <img src="Screenshot 2024-06-25 163233.png" alt="Project 1 Screenshot">
-        <p class="subtitle">Key Technologies and Skills:</p>
-        <ul>
-            <li>Python</li>
-            <li>Streamlit</li>
-            <li>Pandas</li>
-            <li>Youtube Api</li>
-            <li>Mysql</li>
-        </ul>
-        <p class="subtitle">GitHub Link:</p>
-        <p><a href="https://github.com/krishnanari/youtube" target="_blank">GitHub Repository</a></p>
+        <div class="project">
+            <h3>Project 3: BizCardX - Business Card Data Extraction with OCR</h3>
+            <p>BizCardX is a Python-based application designed to extract and manage information from business cards using Optical Character Recognition (OCR) with the help of EasyOCR, Streamlit, and SQLite. This tool automates the extraction of key details from business card images, such as name, designation, company name, contact information, email, website, address, and pincode, and stores the data in a SQLite database.</p>
+            <img src="Screenshot 2024-06-26 094753.png" alt="BizCardX">
+            <img src="Screenshot 2024-06-26 094937.png" alt="BizCardX">
+            <img src="Screenshot 2024-06-26 095000.png" alt="BizCardX">
+            <p><strong>Key Technologies and Skills:</strong> Python, EasyOCR, Streamlit, Pandas, SQLite, Numpy, PIL, re</p>
+            <p><a href="https://github.com/krishnanari/BizCardX" target="_blank">GitHub Repository</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Project 4: Airbnb Analysis</h3>
+            <p>Airbnb is an online marketplace that connects people who want to rent out their property with people who are looking for accommodations, typically for short stays. Airbnb offers hosts a relatively easy way to earn some income from their property. Guests often find that Airbnb rentals are cheaper and homier than hotels. Airbnb Inc. (Airbnb) operates an online marketplace that connects hosts and guests to facilitate short-term lodging and experiences. The company's platform provides access to a variety of accommodations, including apartments, houses, and unique properties, as well as local experiences offered by hosts. It enables hosts to list their properties and experiences and guests to discover and book them.</p>
+            <p><strong>Key Technologies and Skills:</strong> Python, Pandas, Matplotlib, Seaborn, EDA, Jupyter Notebook</p>
+        </div>
     </section>
 
-    <section class="project">
-        <h2>Project 2: PHONEPE DATA VISUALIZATION AND EXPLORATION</h2>
-        <p class="subtitle">Overview:</p>
-        <p>This Streamlit web application is designed for visualizing and exploring PhonePe data, including aggregated transaction data, aggregated user
-            data, map transaction data, map user data, top transaction data, and top user data.</p>
-        <p class="subtitle">FEATURES:</p>
-        <ul>
-            <li>Aggregated Analysis</li>
-            <li>Map Analysis</li>
-            <li>Top Analysis</li>
-        </ul>
-        <p class="subtitle">Webpage Overview:</p>
-        <img src="Screenshot 2024-06-26 092843.png" alt="Project 2 Screenshot">
-        <img src="Screenshot 2024-06-26 092854.png" alt="Project 2 Screenshot">
-        <img src="Screenshot 2024-06-26 092908.png" alt="Project 2 Screenshot">
-        <p class="subtitle">Key Technologies and Skills:</p>
-        <ul>
-            <li>Python</li>
-            <li>Streamlit</li>
-            <li>Pandas</li>
-            <li>Mysql</li>
-        </ul>
-        <p class="subtitle">GitHub Link:</p>
-        <p><a href="https://github.com/krishnanari/phonepe" target="_blank">GitHub Repository</a></p>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:arikrishnan23121999@gmail.com">arikrishnan23121999@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ari-krishnan-9735ab208/" target="_blank">Ari Krishnan</a></p>
     </section>
-
-    <section class="project">
-        <h2>Project 3: BIZCARDX-BUSINESS CARD DATA EXTRACTION WITH OCR</h2>
-        <p class="subtitle">Overview:</p>
-        <p>BIZCARDX is a Python-based application designed to extract and manage information from business cards using Optical Character Recognition (OCR)
-            with the help of EasyOCR, Streamlit, and SQLite. This tool automates the extraction of key details from business card images, such as name,
-            designation,company name, contact information, email, website, address, and pincode, and stores the data in a SQLite database.</p>
-        <p class="subtitle">FEATURES:</p>
-        <ul>
-            <li>Image Upload and Text Extraction: Upload business card images and extract text using EasyOCR</li>
-            <li>Data Display and Storage: Display extracted data in a table and save it to a SQLite database</li>
-            <li>Data Modification: Modify existing records in the database</li>
-            <li>Streamlit Interface: User-friendly interface built with Streamlit</li>
-        </ul>
-        <p class="subtitle">Webpage Overview:</p>
-        <img src="Screenshot 2024-06-26 094753.png" alt="Project 2 Screenshot">
-        <img src="Screenshot 2024-06-26 094937.png" alt="Project 2 Screenshot">
-        <img src="Screenshot 2024-06-26 095000.png" alt="Project 2 Screenshot">
-        <p class="subtitle">Key Technologies and Skills:</p>
-        <ul>
-            <li>Python</li>
-            <li>EasyOCR</li>
-            <li>Streamlit</li>
-            <li>Pandas</li>
-            <li>Sqlite3</li>
-            <li>Numpy,PIL,re</li>
-        </ul>
-        <p class="subtitle">GitHub Link:</p>
-        <p><a href="https://github.com/krishnanari/BizCardX" target="_blank">GitHub Repository</a></p>
-    </section>
-
-    <section class="project">
-        <h2>Project 4: Airbnb Analysis</h2>
-        <p class="subtitle">Overview:</p>
-        <p>Airbnb is an online marketplace that connects people who want to rent out their property with people who are looking for accommodations,typically	for short stays. Airbnb offers hosts a relatively easy way to earn some income from their property.Guests often find that Airbnb rentals are cheaper	and homier than hotels. Airbnb Inc (Airbnb) operates an online platform for hospitality services.The company has presence in China, India, Japan, 	Australia, Canada, Austria, Germany, Switzerland, Belgium, Denmark, France, Italy, Norway, 	Portugal, Sweden, the Netherlands, and Brazil, among 	others. Airbnb is headquartered in San Francisco, California, the US.</p>
-	<p class="subtitle">Webpage Overview:</p>
-        <img src="Screenshot 2024-06-26 100457.png" alt="Project 2 Screenshot">
-	<img src="Screenshot 2024-06-26 100654.png" alt="Project 2 Screenshot">
-	<img src="Screenshot 2024-06-26 100729.png" alt="Project 2 Screenshot">
-        <p class="subtitle">Key Technologies and Skills:</p>
-        <ul>
-            <li>Python</li>
-	    <li>DATA PREPROCESSING</li>
-	    <li>EDA</li>
-	    <li>Pandas</li>
-            <li>Streamlit</li>
-            <li>VISUALIZATION</li>
-            <li>PowerBi</li>
-         </ul>
-        <p class="subtitle">GitHub Link:</p>
-        <p><a href="https://github.com/krishnanari/Airbnb" target="_blank">GitHub Repository</a></p>
-    </section>
-
-    <section class="project">
-        <h2>Project 5:Industrial Copper Model</h2>
-        <p class="subtitle">Overview:</p>
-        <p>This project aims to analyze the noisy data using machine learning regression model can address these issues by utilizing advanced techniques and 	a lead classification model is a system for evaluating and classifying leads based on how likely they are to become a customer.</p>
-	<p class="subtitle">Webpage Overview:</p>
-        <img src="Screenshot 2024-07-02 103340.png" alt="Project 2 Screenshot">
-	<img src="Screenshot 2024-07-02 103425.png" alt="Project 2 Screenshot">
-	<img src="Screenshot 2024-07-02 103504.png" alt="Project 2 Screenshot">
-        <p class="subtitle">Key Technologies and Skills:</p>
-        <ul>
-            <li>Python</li>
-	    <li>DATA PREPROCESSING</li>
-	    <li>EDA</li>
-	    <li>Pandas</li>
-            <li>Streamlit</li>
-         </ul>
-        <p class="subtitle">GitHub Link:</p>
-        <p><a href="https://github.com/krishnanari/Industrial-Copper-Model" target="_blank">GitHub Repository</a></p>
-    </section>
-
-    <section class="project">
-        <h2>Project 6:Singapore resale flat price prediction</h2>
-        <p class="subtitle">Overview:</p>
-        <p>The objective of this project is to develop a machine learning model and deploy it as a user-friendly web application that predicts the resale 	prices of flats in Singapore. This predictive model will be based on historical data of resale flat transactions, and it aims to assist both 	potential buyers and sellers in estimating the resale value of a flat.</p>
-	<p class="subtitle">Webpage Overview:</p>
-        <img src="Screenshot 2024-07-02 103030.png" alt="Project 2 Screenshot">
-	<img src="Screenshot 2024-07-02 103112.png" alt="Project 2 Screenshot">
-	<img src="Screenshot 2024-07-02 103140.png" alt="Project 2 Screenshot">
-        <p class="subtitle">Key Technologies and Skills:</p>
-        <ul>
-            <li>Python</li>
-	    <li>DATA PREPROCESSING</li>
-	    <li>EDA</li>
-	    <li>Pandas</li>
-            <li>Streamlit</li>
-         </ul>
-        <p class="subtitle">GitHub Link:</p>
-        <p><a href="https://github.com/krishnanari/SINGAPORE-RESALE-FLAT-PRICES-PREDICTING" target="_blank">GitHub Repository</a></p>
-    </section>
-
 
     <footer>
-        <p>&copy; Portfolio By Ari krishnan</p>
+        <p>© 2024 Ari Krishnan</p>
     </footer>
 </body>
 
